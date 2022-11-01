@@ -1,0 +1,65 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #ecf0f3;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+}
+
+.container,
+.navigation-bar {
+    position: relative;
+    margin: 36px;
+    border-radius: 18px;
+    padding: 36px;
+    box-sizing: border-box;
+    background: #ecf0f3;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+    animation: appear 800ms reverse;
+    transition-duration: 800ms;
+}
+
+.navigation-bar {
+    overflow: hidden;
+    background-color: darkslategray;
+    padding: 0;
+}
+
+.navigation-bar a {
+    float: left;
+    text-align: center;
+    color: white;
+    padding: 9px;
+    padding-inline: 18px;
+    float: left;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.navigation-bar a:hover {
+    background-color: slategray;
+    box-shadow: 6px 0px 3px slategrey, -6px 0px 3px slategrey;
+    color: aquamarine;
+}
+
+.navigation-bar a.active {
+    background-color: slategray;
+    box-shadow: 6px 0px 3px slategrey, -6px 0px 3px slategrey;
+}
+
+.container:hover {
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+
+@keyframes appear {
+    100% {
+        transform: translate(0em, 30em);
+    }
+}
+
+footer {
+    padding: 18px;
+}
