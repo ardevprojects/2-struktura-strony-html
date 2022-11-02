@@ -12,13 +12,26 @@ body {
 .navigation-bar {
     position: relative;
     margin: 36px;
-    border-radius: 18px;
+    border-radius: 3px;
     padding: 36px;
     box-sizing: border-box;
     background: #ecf0f3;
     box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
     animation: appear 800ms reverse;
     transition-duration: 800ms;
+    text-shadow: 0px 0px 9px white;
+}
+
+#home {
+    background: rgb(242, 255, 255);
+}
+
+#about {
+    background: rgb(255, 255, 239);
+}
+
+#contact {
+    background: rgb(255, 239, 241);
 }
 
 .navigation-bar {
@@ -31,7 +44,7 @@ body {
     float: left;
     text-align: center;
     color: white;
-    padding: 9px;
+    padding: 6px;
     padding-inline: 18px;
     float: left;
     text-align: center;
