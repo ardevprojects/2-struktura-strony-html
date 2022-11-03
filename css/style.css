@@ -1,78 +1,76 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: #ecf0f3;
+    background-color: black;
     align-items: center;
     text-align: center;
     justify-content: center;
-    place-items: center;
+    color: #000;
 }
 
-.container,
-.navigation-bar {
-    position: relative;
-    margin: 36px;
-    border-radius: 3px;
-    padding: 36px;
-    box-sizing: border-box;
-    background: #ecf0f3;
-    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
-    animation: appear 800ms reverse;
-    transition-duration: 800ms;
-    text-shadow: 0px 0px 9px white;
-}
-
-#home {
-    background: rgb(242, 255, 255);
-}
-
-#about {
-    background: rgb(255, 255, 239);
-}
-
-#contact {
-    background: rgb(255, 239, 241);
-}
-
-.navigation-bar {
-    overflow: hidden;
-    background-color: darkslategray;
+#menu {
     padding: 0;
+    background: #000;
 }
 
-.navigation-bar a {
-    float: left;
-    text-align: center;
+#menu .menu-item {
+    display: inline-block;
+}
+
+#menu .menu-item a {
     color: white;
-    padding: 6px;
     padding-inline: 18px;
-    float: left;
-    text-align: center;
     font-weight: 600;
     font-size: 24px;
+    text-decoration: none;
 }
 
-.navigation-bar a:hover {
-    background-color: slategray;
-    box-shadow: 6px 0px 3px slategrey, -6px 0px 3px slategrey;
+#menu .menu-item a:hover {
+    text-shadow: 0px 2px 9px rgb(232, 1, 253), -0px -2px 9px rgb(33, 255, 222);
     color: aquamarine;
 }
 
-.navigation-bar a.active {
-    background-color: slategray;
-    box-shadow: 6px 0px 3px slategrey, -6px 0px 3px slategrey;
+#header {
+    position: relative;
+    text-align: center;
 }
 
-.container:hover {
-    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+img {
+    max-width: 100%;
 }
 
-@keyframes appear {
-    100% {
-        transform: translate(0em, 30em);
-    }
+#header #main-header-text {
+    position: absolute;
+    top: 50%;
+    font-size: 60px;
+    font-weight: 600;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0px 1px 2px rgb(232, 1, 253), -0px -1px 2px rgb(33, 255, 222);
 }
 
-footer {
-    padding: 18px;
+#about {
+    background: rgb(230, 255, 251);
+    padding: 30px;
+}
+
+#about #about-header,
+#contact #contact-header,
+#contact #address-header {
+    text-shadow: 0.3px 0.3px 0.3px rgb(232, 1, 253), -0.3px -0.3px 0.3px rgb(33, 255, 222);
+}
+
+#about #about-content {
+    /* margin: 30px; */
+    /* padding: 30px; */
+}
+
+#contact {
+    background: rgb(254, 242, 255);
+    /* box-shadow: 0px 2px 9px rgb(232, 1, 253), -0px -2px 9px rgb(33, 255, 222); */
+    /* margin: 30 px; */
+    padding: 30px;
 }
